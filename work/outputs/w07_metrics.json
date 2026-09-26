@@ -1,0 +1,30 @@
+{
+  "month_trained": "2026-03",
+  "total_rows": 51586,
+  "unique_clients": 41,
+  "archetype_counts": {
+    "page1_ctr_gap": 29204,
+    "striking_distance_decay": 8883,
+    "deep_page_decline": 7320,
+    "stable_performer": 5204,
+    "insufficient_data": 975
+  },
+  "action_counts": {
+    "review_title_meta": 29204,
+    "refresh_content": 8883,
+    "monitor": 8295,
+    "protect": 5204
+  },
+  "precision_grouped_split": {
+    "k10": 0.8,
+    "k20": 0.65,
+    "k50": 0.74
+  },
+  "precision_random_split_inflated": {
+    "k10": 0.9,
+    "k20": 0.9,
+    "k50": 0.92
+  },
+  "base_rate": 0.5557515605009111,
+  "insufficient_data_excluded": 975
+}
