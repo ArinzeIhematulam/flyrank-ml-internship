@@ -142,7 +142,8 @@
 </div>
 
 <h2><span class="num">1</span> Introduction</h2>
-<p>A content editor with capacity to review 20–50 pages this cycle needs a ranked list, not a spreadsheet of every page's metrics. Reviewing the wrong pages wastes scarce editor time; missing a genuinely declining page lets it keep losing visibility unnoticed. This project asks: can a learned model rank pages for review better than a simple, hand-written rule — and does that advantage hold up on clients the model has never seen?</p>
+<p>A content editor with capacity to review 20–50 pages this cycle needs a ranked list, not a spreadsheet of every page's metrics. Reviewing the wrong pages wastes scarce editor time; missing a genuinely declining page lets it keep losing visibility unnoticed.</p>
+<p>This is the exact problem behind FlyRank's own "Fix CTR" and "Zombie Page" workflow flags (see FlyRank's March 2026 research paper): pages that once earned real search visibility begin losing clicks, and someone has to decide which ones are worth a rewrite versus which ones aren't worth the time. Across a portfolio of tens of thousands of pages per client, doing this by eye doesn't scale. This project asks: can a learned model rank pages for review better than a simple, hand-written rule capturing the same intuition behind those flags — and does that advantage hold up on clients the model has never seen?</p>
 
 <h2><span class="num">2</span> Data</h2>
 <p>Data comes from the <a href="https://huggingface.co/datasets/FlyRank/internship-warehouse">FlyRank internship-warehouse</a> on Hugging Face, specifically the <code>fact_content_daily_performance</code> table filtered to <code>month=2026-03</code> — a mid-panel month chosen deliberately over the sealed final-month sample. The full warehouse spans January 2025 through June 2026 (roughly 79 million rows across 18 monthly partitions); this study develops and validates on one representative month before drawing conclusions.</p>
